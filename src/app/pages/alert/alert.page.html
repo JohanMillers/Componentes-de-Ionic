@@ -1,0 +1,17 @@
+<app-header [titulo]="Titulo || 'Alert Page'"> </app-header>
+
+<ion-content>
+    <ion-button color="primary" expand="block" (click)="presentAlert()">
+        Present Alert
+    </ion-button>
+    <ion-button color="primary" expand="block" (click)="presentAlertMultipleButtons()">
+        Present Alert Multiple Buttons
+    </ion-button>
+    <ion-button color="primary" expand="block" (click)="presentAlertConfirm()">
+        Present Alert Confirm
+    </ion-button>
+    <ion-button color="primary" expand="block" (click)="presentInput()">
+        present Alert Prompt
+    </ion-button>
+
+</ion-content>
