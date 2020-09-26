@@ -42,6 +42,16 @@ export class InicioPage implements OnInit {
       icon: 'hourglass-outline',
       name: 'DateTime',
       redirectTo: '/date-time'
+    },
+    {
+      icon: 'add',
+      name: 'Fabs',
+      redirectTo: '/fab'
+    },
+    {
+      icon: 'apps-outline',
+      name: 'Grids',
+      redirectTo: '/grid'
     }
   ];
 
