@@ -1,0 +1,72 @@
+<app-header [titulo]="nombre || 'Input Forms'"></app-header>
+  
+<ion-content class="ion-padding">
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+      </ion-item>
+    </ion-list>
+
+ 
+<ion-list>
+  <ion-item class="ion-margin-bottom">
+    <!-- Input with placeholder -->
+<ion-input placeholder="Enter Input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <!-- Number type input -->
+<ion-input type="number" value="333"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" autocapitalize="on">Floating Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Fixed Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Stacked Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+</ion-list>
+
+<h2>Text Area</h2>
+<ion-list>
+  <ion-item>
+    <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+  </ion-item>
+  <!-- Textarea in an item with a floating label -->
+<ion-item>
+  <ion-label position="floating">Description</ion-label>
+  <ion-textarea></ion-textarea>
+</ion-item>
+<!-- Disabled and readonly textarea in an item with a stacked label -->
+<ion-item>
+  <ion-label position="stacked">Summary</ion-label>
+  <ion-textarea
+    disabled
+    readonly
+    value="Ionic enables developers to build performant, high-quality mobile apps.">
+  </ion-textarea>
+</ion-item>
+<!-- Textarea that clears the value on edit -->
+<ion-item>
+  <ion-label>Comment</ion-label>
+  <ion-textarea clearOnEdit="true"></ion-textarea>
+</ion-item>
+
+<!-- Textarea with custom number of rows and cols -->
+<ion-item>
+  <ion-label>Notes</ion-label>
+  <ion-textarea rows="6" cols="20" placeholder="Enter any notes here..."></ion-textarea>
+</ion-item>
+</ion-list>
+
+</ion-content>
